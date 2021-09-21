@@ -1,0 +1,39 @@
+{
+    "name": "microsoft/news",
+    "description": "",
+    "license": "",
+    "keywords": [],
+    "authors": [],
+    "repositories": {
+        "core": {
+            "type": "path",
+            "url": "../microsoft-core",
+            "options": {
+                "symlink": true
+            }
+        }
+    },
+    "require": {
+        "microsoft/core": "*",
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "microsoft_news\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "microsoft_news\\tests\\": "../microsoft-news-tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
