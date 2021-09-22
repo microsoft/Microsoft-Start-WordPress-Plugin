@@ -1,0 +1,85 @@
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+# pool:
+#   demands: 
+#   - agent.os -equals Windows_NT
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+  PLUGIN_VERSION: $(Build.BuildNumber)
+
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: replacetokens@3
+      inputs:
+        targetFiles: '**/*.php'
+        encoding: 'auto'
+        writeBOM: true
+        actionOnMissing: 'warn'
+        keepToken: false
+        tokenPrefix: '#{'
+        tokenSuffix: '}#'
+        useLegacyPattern: false
+        enableTransforms: false
+        enableTelemetry: true
+
+    - task: DockerInstaller@0
+      inputs:
+        dockerVersion: '17.09.0-ce'
+
+    - task: DockerCompose@0
+      displayName: Build Services
+      inputs:
+        containerregistrytype: 'Azure Container Registry'
+        dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+        additionalDockerComposeFiles: '$(Build.SourcesDirectory)/docker-compose.prod.yml'
+        dockerComposeFileArgs: 'TAG=$(Build.BuildNumber)'
+        action: 'Build services'
+        includeSourceTags: true
+        includeLatestTag: true
+        requireAdditionalDockerComposeFiles: true
+
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
+          docker*
+          Docker*
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'    
+
+    - task: CmdLine@2
+      inputs:
+        script: |
+          docker run -d --name $(Build.BuildNumber) microsoft_wordpress:$(Build.BuildNumber)
+          docker cp $(Build.BuildNumber):/var/www/html/wp-content/plugins $(Build.ArtifactStagingDirectory)
+          docker stop $(Build.BuildNumber)
+
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/plugins/microsoft-news'
+        includeRootFolder: true
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/microsoft-news-$(Build.BuildNumber).zip'
+        replaceExistingArchive: true
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'microsoftwordpress'
+        publishLocation: 'Container'

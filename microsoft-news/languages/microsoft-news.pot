@@ -1,0 +1,327 @@
+# Copyright (C) 2021 Your Name
+# This file is distributed under the same license as the Microsoft News plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Microsoft News 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/microsoft-news\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-19T20:51:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+
+#. Plugin Name of the plugin
+msgid "Microsoft News"
+msgstr ""
+
+#. Description of the plugin
+msgid "Push to Microsoft News"
+msgstr ""
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr ""
+
+#: dashboard/index.php:58
+msgid "General"
+msgstr ""
+
+#: dashboard/index.php:58
+#: assets/js/dashboard.js:432
+#: dashboard/authentication/authentication.jsx:106
+msgid "Microsoft"
+msgstr ""
+
+#: dashboard/index.php:63
+#: dashboard/index.php:64
+#: assets/js/dashboard.js:762
+#: assets/js/dashboard.js:794
+#: dashboard/dashboard.entry.jsx:103
+#: dashboard/dashboard.entry.jsx:128
+msgid "Content"
+msgstr ""
+
+#: dashboard/index.php:75
+#: dashboard/index.php:76
+#: assets/js/dashboard.js:768
+#: assets/js/dashboard.js:772
+#: dashboard/dashboard.entry.jsx:107
+#: dashboard/dashboard.entry.jsx:108
+msgid "Billing & Payment"
+msgstr ""
+
+#: dashboard/index.php:84
+#: dashboard/index.php:85
+#: assets/js/dashboard.js:778
+#: assets/js/dashboard.js:782
+#: assets/js/dashboard.js:796
+#: assets/js/dashboard.js:964
+#: dashboard/dashboard.entry.jsx:111
+#: dashboard/dashboard.entry.jsx:112
+#: dashboard/dashboard.entry.jsx:134
+#: dashboard/settings/settings.jsx:59
+msgid "Settings"
+msgstr ""
+
+#: assets/js/dashboard.js:383
+#: dashboard/authentication/authentication.jsx:57
+msgid "Grow your audience with Microsoft"
+msgstr ""
+
+#: assets/js/dashboard.js:383
+#: dashboard/authentication/authentication.jsx:58
+msgid "Easily publish your blog to tens of millions of Microsoft New audience worldwise - one of the biggest worldwide news networks."
+msgstr ""
+
+#: assets/js/dashboard.js:383
+#: dashboard/authentication/authentication.jsx:59
+msgid "click 'Join' to join the Microsoft Content Partner Network Programme:"
+msgstr ""
+
+#: assets/js/dashboard.js:385
+#: dashboard/authentication/authentication.jsx:61
+msgid "Learn more"
+msgstr ""
+
+#: assets/js/dashboard.js:388
+#: dashboard/authentication/authentication.jsx:63
+msgid "Join now"
+msgstr ""
+
+#: assets/js/dashboard.js:397
+#: dashboard/authentication/authentication.jsx:74
+msgid "Your Disconnected, Reconnect Again "
+msgstr ""
+
+#: assets/js/dashboard.js:397
+#: dashboard/authentication/authentication.jsx:75
+msgid "Your WordPress website is disconnected from your Microsoft Creator Center Account. Click 'Connect' below to sign into your Microsoft Account and connect your website."
+msgstr ""
+
+#: assets/js/dashboard.js:400
+#: assets/js/dashboard.js:435
+#: dashboard/authentication/authentication.jsx:76
+#: dashboard/authentication/authentication.jsx:109
+msgid "Connect"
+msgstr ""
+
+#: assets/js/dashboard.js:424
+#: dashboard/authentication/authentication.jsx:100
+msgid "Connection"
+msgstr ""
+
+#: assets/js/dashboard.js:426
+#: dashboard/authentication/authentication.jsx:101
+msgid "Share your post to Microsoft automatically when publishing a post in Wordpress by connecting with your Microsoft Account"
+msgstr ""
+
+#: assets/js/dashboard.js:432
+#: dashboard/authentication/authentication.jsx:107
+msgid "Share posts to your Microsoft News feed"
+msgstr ""
+
+#: assets/js/dashboard.js:438
+#: dashboard/authentication/authentication.jsx:110
+msgid "Disconnect"
+msgstr ""
+
+#: assets/js/dashboard.js:507
+#: dashboard/authentication/components/AccountDetails.jsx:35
+msgid "Failed to load MSN account details"
+msgstr ""
+
+#: assets/js/dashboard.js:610
+#: dashboard/components/welcomeComponent.jsx:30
+msgid "Error fetching profile from MSN"
+msgstr ""
+
+#: assets/js/dashboard.js:619
+#: dashboard/components/welcomeComponent.jsx:38
+msgid "Congrats, "
+msgstr ""
+
+#: assets/js/dashboard.js:619
+#: assets/js/dashboard.js:646
+#: dashboard/components/welcomeComponent.jsx:40
+#: dashboard/components/welcomeComponent.jsx:70
+msgid "You have successfully joined the Microsoft Content Partner Network Program."
+msgstr ""
+
+#: assets/js/dashboard.js:619
+#: assets/js/dashboard.js:646
+#: dashboard/components/welcomeComponent.jsx:41
+#: dashboard/components/welcomeComponent.jsx:71
+msgid "Your content will not be published until your profile is approved."
+msgstr ""
+
+#: assets/js/dashboard.js:633
+#: assets/js/dashboard.js:660
+#: dashboard/components/welcomeComponent.jsx:51
+#: dashboard/components/welcomeComponent.jsx:81
+msgid "Edit Profile"
+msgstr ""
+
+#: assets/js/dashboard.js:646
+#: dashboard/components/welcomeComponent.jsx:68
+msgid "my-plugin"
+msgstr ""
+
+#: assets/js/dashboard.js:751
+#: dashboard/dashboard.entry.jsx:92
+msgid "Microsoft Publisher Dashboard"
+msgstr ""
+
+#: assets/js/dashboard.js:787
+#: dashboard/dashboard.entry.jsx:116
+msgid "Microsoft Content Partner Center"
+msgstr ""
+
+#: assets/js/dashboard.js:798
+#: dashboard/dashboard.entry.jsx:143
+msgid "Billing"
+msgstr ""
+
+#: assets/js/dashboard.js:798
+#: dashboard/dashboard.entry.jsx:143
+msgid "Payment"
+msgstr ""
+
+#: assets/js/dashboard.js:841
+#: dashboard/payment/payment.jsx:8
+msgid "Microsoft partner program shares revenue with qualified content creators."
+msgstr ""
+
+#: assets/js/dashboard.js:841
+#: dashboard/payment/payment.jsx:9
+msgid "Below are Microsoft Billing"
+msgstr ""
+
+#: assets/js/dashboard.js:841
+#: dashboard/payment/payment.jsx:9
+msgid "Payment system for our partners."
+msgstr ""
+
+#: assets/js/dashboard.js:847
+#: dashboard/payment/payment.jsx:14
+msgid "Microsoft Payment Central"
+msgstr ""
+
+#: assets/js/dashboard.js:847
+#: dashboard/payment/payment.jsx:15
+msgid "Payment Central allows you to create and maintain your account detail sand payment profile, to receive payments from Microsoft."
+msgstr ""
+
+#: assets/js/dashboard.js:850
+#: dashboard/payment/payment.jsx:18
+msgid "Set-up payment account"
+msgstr ""
+
+#: assets/js/dashboard.js:856
+#: dashboard/payment/payment.jsx:23
+msgid "Microsoft Royalties Statement Website"
+msgstr ""
+
+#: assets/js/dashboard.js:856
+#: dashboard/payment/payment.jsx:24
+msgid "You can receive your royalty statements from this website."
+msgstr ""
+
+#: assets/js/dashboard.js:859
+#: dashboard/payment/payment.jsx:27
+msgid "Check Royalties Statement"
+msgstr ""
+
+#: assets/js/dashboard.js:960
+#: dashboard/settings/settings.jsx:46
+msgid "Settings Saved."
+msgstr ""
+
+#: assets/js/dashboard.js:962
+#: dashboard/settings/settings.jsx:54
+msgid "Something went wrong."
+msgstr ""
+
+#: assets/js/dashboard.js:966
+#: dashboard/settings/settings.jsx:60
+msgid "Default Publish Setting:"
+msgstr ""
+
+#: assets/js/dashboard.js:973
+#: dashboard/settings/settings.jsx:63
+msgid "Default Category:"
+msgstr ""
+
+#: assets/js/dashboard.js:983
+#: dashboard/settings/settings.jsx:70
+msgid "Default Language:"
+msgstr ""
+
+#: assets/js/dashboard.js:1002
+#: dashboard/settings/settings.jsx:82
+msgid "Default Market:"
+msgstr ""
+
+#: assets/js/dashboard.js:1026
+#: dashboard/settings/settings.jsx:92
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/editorSidebar.js:457
+#: assets/js/editorSidebar.js:674
+#: postEditor/components/newsPanelBody.jsx:131
+#: postEditor/components/PostPublishPanel.jsx:18
+msgid "View Post"
+msgstr ""
+
+#: assets/js/editorSidebar.js:597
+#: postEditor/components/newsPanelBody.jsx:43
+msgid "MSN connection needs to setup before being used."
+msgstr ""
+
+#: assets/js/editorSidebar.js:601
+#: postEditor/components/newsPanelBody.jsx:64
+msgid "Share"
+msgstr ""
+
+#: assets/js/editorSidebar.js:610
+#: postEditor/components/newsPanelBody.jsx:67
+msgid "Yes"
+msgstr ""
+
+#: assets/js/editorSidebar.js:612
+#: postEditor/components/newsPanelBody.jsx:68
+msgid "No"
+msgstr ""
+
+#: assets/js/editorSidebar.js:614
+#: postEditor/components/newsPanelBody.jsx:73
+msgid "Microsoft content settings"
+msgstr ""
+
+#: assets/js/editorSidebar.js:618
+#: postEditor/components/newsPanelBody.jsx:78
+msgid "Content image"
+msgstr ""
+
+#: assets/js/editorSidebar.js:622
+#: postEditor/components/newsPanelBody.jsx:88
+msgid "Category"
+msgstr ""
+
+#: assets/js/editorSidebar.js:642
+#: postEditor/components/newsPanelBody.jsx:105
+msgid "Language"
+msgstr ""
+
+#: assets/js/editorSidebar.js:659
+#: postEditor/components/newsPanelBody.jsx:119
+msgid "Market"
+msgstr ""
+
+#: assets/js/editorSidebar.js:678
+#: postEditor/components/newsPanelBody.jsx:139
+msgid "Share this post to Microsoft"
+msgstr ""

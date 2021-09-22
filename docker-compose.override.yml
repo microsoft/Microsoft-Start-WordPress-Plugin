@@ -1,0 +1,28 @@
+version: "3.9"
+    
+services:
+  db:
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: on-failure
+
+  wordpress:
+    image: microsoft_wordpress:dev
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/app
+
+      - ./.wordpress:/var/www/html
+      - /var/www/html/wp-content/plugins
+      #- uploads:/var/www/html/wp-content/uploads
+    build:
+      # dockerfile: Dockerfile.prod
+      target: dev
+    environment:
+      DEBUG: 'true'
+    restart: on-failure
+      
+volumes:
+  db_data: {}
+  # uploads: {}

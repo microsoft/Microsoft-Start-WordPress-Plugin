@@ -1,0 +1,13 @@
+// © Microsoft Corporation. All rights reserved.
+
+#wpadminbar,
+#adminmenuback,
+#adminmenuwrap,
+#wpfooter {
+    display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

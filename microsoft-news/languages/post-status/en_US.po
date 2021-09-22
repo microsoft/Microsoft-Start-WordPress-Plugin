@@ -1,0 +1,175 @@
+#: posts/status.js:1
+msgid "document.content.character.count.range"
+msgstr "The maximum number of characters in a document exceeds 500000 characters."
+
+#: posts/status.js:2
+msgid "licensingRights.hasSyndicationRights.has"
+msgstr "An image has syndication rights."
+
+#: posts/status.js:3
+msgid "textAnalytics.valid"
+msgstr "A text field contains profane terms or phrases."
+
+#: posts/status.js:4
+msgid "image.analytics.profanity.notAdult"
+msgstr "There are images that depict nudity/sexual acts."
+
+#: posts/status.js:5
+msgid "image.analytics.profanity.notRacy"
+msgstr "There are images that are sexually suggestive in nature."
+
+#: posts/status.js:6
+msgid "image.text.isNotDeadBodyRelated"
+msgstr "There are images that contain gore or dead bodies."
+
+#: posts/status.js:7
+msgid "image.analytics.profanity.notGore"
+msgstr "There are images that contain content that is gruesome or disturbing in nature."
+
+#: posts/status.js:8
+msgid "body.hyperlink.category.maxFailures"
+msgstr "There are invalid or malformed hyperlinks."
+
+#: posts/status.js:9
+msgid "document.controllisted.isNot"
+msgstr "The document is from a control listed provider."
+
+#: posts/status.js:10
+msgid "document.byteSize.range"
+msgstr "The document's file size exceeds the 524k bytes maximum."
+
+#: posts/status.js:11
+msgid "seo.canonicalUrl.isValid"
+msgstr "The document's canonical URL is valid."
+
+#: posts/status.js:12
+msgid "sourceMetering.isMetered.isNot"
+msgstr "The document is subject to source metering rules. Source-metering is a contractual limitation that permits us to only publish a certain number of items a day from a publisher."
+
+#: posts/status.js:13
+msgid "document.signalCondition.valid"
+msgstr "The article has sufficient text to classified: missing either body or title."
+
+#: posts/status.js:14
+msgid "labels.category.productAndLabel.joined.isNotLocalRSS"
+msgstr "The document is not local RSS news content."
+
+#: posts/status.js:15
+msgid "body.character.count.range"
+msgstr "The number of characters in the body of the document is within the recommended range of 450 to 1000000."
+
+#: posts/status.js:16
+msgid "document.languageDetection.matchesDocumentLocale"
+msgstr "The language of text in a document matches its locale."
+
+#: posts/status.js:17
+msgid "promoCard.image.reference.exists"
+msgstr "There is not a promotional image available for the content item."
+
+#: posts/status.js:18
+msgid "slide.body.hyperlink.category.maxFailures"
+msgstr "A slideshow contains invalid or malformed hyperlinks."
+
+#: posts/status.js:19
+msgid "slide.image.reference.joined.exists"
+msgstr "A slide in a slideshow does not contain an image."
+
+#: posts/status.js:20
+msgid "slide.count.range"
+msgstr "The number of slides in a slideshow should be within the recommended range of 2 to 200."
+
+#: posts/status.js:21
+msgctxt "duplicate :21:14:21"
+msgid "document.signalCondition.valid"
+msgstr "A slideshow has sufficient text to be classified: missing title, or has neither body nor slide text"
+
+#: posts/status.js:22
+msgid "image.ocr.text.valid"
+msgstr "Text from image Ocr contains profane terms or phrases."
+
+#: posts/status.js:23
+msgctxt "duplicate :23:16:23"
+msgid "body.character.count.range"
+msgstr "The number of characters in the body of the document is not within the recommended range of 200 to 1000000."
+
+#: posts/status.js:24
+msgid "image.analytics.isNotAlcoholRelated"
+msgstr "An image glamorizes the use/consumption of alcohol."
+
+#: posts/status.js:25
+msgctxt "duplicate :25:16:25"
+msgid "body.character.count.range"
+msgstr "The number of characters in the body of the document is not within the recommended range of 100 to 1000000."
+
+#: posts/status.js:26
+msgid "image.text.isNotSmokingRelated"
+msgstr "An image glamorizes the use/consumption of smoking."
+
+#: posts/status.js:27
+msgid "image.text.isNotDrugRelated"
+msgstr "An image glamorizes the use/consumption of drug."
+
+#: posts/status.js:28
+msgid "prohibited.content.isNotUndark"
+msgstr "We do not have the rights to use Undark content under another partner's name."
+
+#: posts/status.js:29
+msgid "document.dcsTags.suicideLabel.notDetected"
+msgstr "The article contains content about suicide."
+
+#: posts/status.js:30
+msgid "video.hasThumbnail"
+msgstr "Videos require a thumbnail image."
+
+#: posts/status.js:31
+msgctxt "duplicate :31:21:31"
+msgid "slide.count.range"
+msgstr "The number of slides in a slideshow are not within the recommended range of 4 to 200."
+
+#: posts/status.js:32
+msgctxt "duplicate :32:21:32"
+msgid "slide.count.range"
+msgstr "The number of slides in a slideshow are not within the recommended range of 5 to 200."
+
+#: posts/status.js:33
+msgctxt "duplicate :33:16:33"
+msgid "body.character.count.range"
+msgstr "the number of characters in the body of the document is within the recommended range of 300 to 1000000."
+
+#: posts/status.js:34
+msgid "video.insights.isNotAdultOrRacy"
+msgstr "Videos must not contain any adult or racy content. This is content which depicts nudity/sexual acts or is sexually suggestive in nature."
+
+#: posts/status.js:35
+msgid "image.analytics.isNotSmokingRelated"
+msgstr "Images must not glamorize the use/consumption of smoking."
+
+#: posts/status.js:36
+msgid "video.ClosedCaptions.Exists"
+msgstr "A HREF of closed captions must exist in video document."
+
+#: posts/status.js:37
+msgid "image.byteSize.range"
+msgstr " an image file size is over the 10000 bytes."
+
+#: posts/status.js:38
+msgctxt "duplicate :38:38:38"
+msgid "image.byteSize.range"
+msgstr " an image file size is over the 10000 bytes."
+
+#: posts/status.js:39
+msgctxt "duplicate :39:16:39"
+msgid "body.character.count.range"
+msgstr "The number of characters in the body of the document must be within the recommended range of 0 to 1000000."
+
+#: posts/status.js:40
+msgid "image.moderation.profanity.notAdult"
+msgstr "An image contains adult content. These are images that depict nudity/sexual acts."
+
+#: posts/status.js:41
+msgid "image.moderation.profanity.notRacy"
+msgstr "An image contains racy content. These are images that are sexually suggestive in nature."
+
+#: posts/status.js:42
+msgid "image.moderation.profanity.notGore"
+msgstr "An image contains content that is gruesome or disturbing in nature."
