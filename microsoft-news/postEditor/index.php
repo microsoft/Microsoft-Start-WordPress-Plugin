@@ -65,19 +65,6 @@ class PostEditor
             'single' => true,
             'auth_callback' => true
         ));
-
-        register_meta( 'post', 'MSN_Language', array(
-            'show_in_rest' => true,
-            'type' => 'string',
-            'single' => true,
-            'auth_callback' => true
-        ));
-        register_meta( 'post', 'MSN_Markets', array(
-            'show_in_rest' => true,
-            'type' => 'string',
-            'single' => true,
-            'auth_callback' => true
-        ));
         register_meta('post', 'msn_id', array(
             'show_in_rest' => true,
             'type' => 'string',

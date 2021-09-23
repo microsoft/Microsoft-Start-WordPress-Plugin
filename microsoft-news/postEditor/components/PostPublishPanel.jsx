@@ -5,12 +5,12 @@ import { __ } from "@wordpress/i18n";
 import { withSelect } from '@wordpress/data';
 
 const PostPublishPanel = ({meta}) => {
-    const { msn_id, MSN_Markets } = meta;
+    const { msn_id } = meta;
 
     if (msn_id) {
         return (
             <PluginPostPublishPanel>
-                <a href={`https://www.msn.com/${MSN_Markets}/creator/management/content/article`} target="_blank">{__("View Post in Microsoft")}</a>
+                <a href={`https://www.msn.com/en-us/creator/management/content/article`} target="_blank">{__("View Post in Microsoft")}</a>
             </PluginPostPublishPanel>
         )
     }

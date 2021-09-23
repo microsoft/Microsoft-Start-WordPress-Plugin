@@ -61,16 +61,6 @@ class MSNOptions extends Options
         return static::Option(func_get_args(), true);
     }
 
-    public static function Language()
-    {
-        return static::Option(func_get_args(), strtoupper(substr(get_locale(), 0, 2)));
-    }
-
-    public static function Market()
-    {
-        return static::Option(func_get_args(), strtolower(str_replace("_", "-", get_locale())));
-    }
-
     public static function Category()
     {
         return static::Option(func_get_args(), "uncatagorised");
