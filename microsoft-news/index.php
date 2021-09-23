@@ -2,20 +2,23 @@
 // © Microsoft Corporation. All rights reserved.
 
 /**
- * Plugin Name: Microsoft News
- * Description: Publish articles to Microsoft news
- * Version: #{PLUGIN_VERSION}#
+ * Plugin Name:       Microsoft Start
+ * Plugin URI:        https://www.msn.com/
+ * Description:       Microsoft Start WordPress plugin to help WordPress content creators to share content to Microsoft Start News feed.
+ * Version:           1.2
  * Requires at least: 5.4
- * Requires PHP: 7.3
- * Author: Microsoft
- * Author URI: http://www.microsoft.com
+ * Requires PHP:      7.3
+ * Author:            Microsoft
+ * Author URI:        https://www.microsoft.com/
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 namespace microsoft_news;
 
 //define('WP_DEBUG', true);
 //define('WP_DEBUG_DISPLAY', true);
-// define( 'WP_DEBUG_LOG', '/tmp/wp-errors.log' );
+//define( 'WP_DEBUG_LOG', '/tmp/wp-errors.log' );
 
 require __DIR__ . '/vendor/autoload.php';
 

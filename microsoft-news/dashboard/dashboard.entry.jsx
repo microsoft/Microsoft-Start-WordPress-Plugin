@@ -8,7 +8,6 @@ import { Container } from 'microsoft_core/components'
 import { Content } from './content/content.jsx';
 import { MicrosoftLogo } from 'microsoft_core/icons.jsx'
 import { Monetization } from "./monetization/monetization.jsx"
-import { Payment } from "./payment/payment.jsx"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Settings } from "./settings/settings.jsx"
@@ -39,10 +38,12 @@ function AdminDashboard() {
                                 </NavLink >
                             </li>
                             <li className="mr-6 m-0">
-                                <NavLink to="/payments" className="text-black no-underline focus:shadow-none" activeClassName="border-b-2 border-0 border-solid border-microsoft font-bold">{__('Payments')}</NavLink>                                
-                            </li>
-                            <li className="mr-6 m-0">
-                                <NavLink to="/monetization" className="text-black no-underline focus:shadow-none" activeClassName="border-b-2 border-0 border-solid border-microsoft font-bold">{__('Monetization')}</NavLink>                                
+                                {msn_dashboard_render_status.profile && (
+                                    <NavLink to="/monetization" className="text-black no-underline focus:shadow-none" activeClassName="border-b-2 border-0 border-solid border-microsoft font-bold">{__('Monetization')}</NavLink>
+                                )}
+                                {!msn_dashboard_render_status.profile && (
+                                    <span className="text-gray-400">{__('Monetization')}</span>
+                                )}
                             </li>
                             <li className="mr-6 m-0">
                                 <NavLink to="/settings" className="text-black no-underline focus:shadow-none" activeClassName="border-b-2 border-0 border-solid border-microsoft font-bold">{__('Settings')}</NavLink>
@@ -65,12 +66,6 @@ function AdminDashboard() {
                             <Container>
                                 <h1 className="mt-5 mb-2.5 text-xl" id="tour-nav-02">{__("Content")}</h1>
                                 <Content />
-                            </Container>
-                        </Route>
-                        <Route path="/payments">
-                            <Container>
-                                <h1 className="mt-5 mb-2.5 text-xl">{__("Payments")}</h1>
-                                <Payment />
                             </Container>
                         </Route>
                         <Route path="/monetization">

@@ -101,8 +101,6 @@ class Posts
 
         if ($post_before == null) {
             update_post_meta($post_ID, "MSN_Publish_Option", MSNOptions::Enabled());
-            update_post_meta($post_ID, "MSN_Language", MSNOptions::Language());
-            update_post_meta($post_ID, "MSN_Markets", MSNOptions::Market());
             update_post_meta($post_ID, "MSN_Categories", MSNOptions::Category());
             update_post_meta($post_ID, "MSN_Location", MSNOptions::Location());
         }
@@ -152,7 +150,6 @@ class Posts
             "tags" => array_map(function ($post_tag) {
                 return $post_tag->name;
             }, wp_get_post_tags($post->ID)),
-            "locale" => get_post_meta($post->ID, 'MSN_Markets', true),
             "location" => json_decode(get_post_meta($post->ID, 'MSN_Location', true))
         ];
 

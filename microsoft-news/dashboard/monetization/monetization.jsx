@@ -3,6 +3,10 @@
 import React, { useEffect, useState } from 'react';
 
 export function Monetization() {
+    if(!msn_dashboard_render_status.profile) {
+        return <span>Error loading account details</span>;
+    }
+
     var [token, setToken] = useState(null);
     const accountId = msn_dashboard_render_status.profile.accountId;
     const partnerId = msn_dashboard_render_status.profile.partnerId;

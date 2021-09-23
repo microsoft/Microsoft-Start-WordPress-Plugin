@@ -23,7 +23,7 @@ export function Settings() {
                             </NavLink>
                         )}
 
-                        {!msn_dashboard_render_status.enabled && (<span className="text-gray-300">{__('Account Profile')}</span>)}
+                        {!msn_dashboard_render_status.enabled && (<span className="text-gray-400">{__('Account Profile')}</span>)}
 
                     </li>
                     <li className="px-3.5 m-0">
@@ -32,7 +32,7 @@ export function Settings() {
                                 {__('Content Settings')}
                             </NavLink>
                         )}
-                        {!msn_dashboard_render_status.enabled && (<span className="text-gray-300">{__('Content Settings')}</span>)}
+                        {!msn_dashboard_render_status.enabled && (<span className="text-gray-400">{__('Content Settings')}</span>)}
                     </li>
                 </ul>
             </nav>

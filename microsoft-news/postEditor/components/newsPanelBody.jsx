@@ -9,21 +9,14 @@ import { NewsSelector } from './selector.jsx';
 import { __ } from "@wordpress/i18n";
 import { categories } from "../categories.jsx"
 import classNames from 'classnames';
-import { languages } from "../msnLanguages.jsx"
 
 const NewsPanelBody = ({ meta, visibility, editPost, ...props }) => {
-    const { MSN_Location, MSN_Categories, MSN_Publish_Option, MSN_Language, MSN_Markets, msn_id } = meta;
+    const { MSN_Location, MSN_Categories, MSN_Publish_Option, msn_id } = meta;
 
     const setCategory = (value) => editPost({ meta: { MSN_Categories: value } });
     const setOption = (value) => editPost({ meta: { MSN_Publish_Option: value } });
-    const setLanguage = (value) => editPost({ meta: { MSN_Language: value } });
-    const setMarket = (value) => editPost({ meta: { MSN_Markets: value } });
     const setLocation = (value) => editPost({ meta: { MSN_Location: value } });
     let categoryList = Object.entries(categories).map(pair => <option value={pair[1]}>{pair[0]}</option>);
-    let languageDictionary = languages.reduce((languages, country) => {
-        languages[country.value] = country;
-        return languages
-    }, {});
 
     let parsedLocationData = {};
     if(MSN_Location) {
@@ -108,26 +101,11 @@ const NewsPanelBody = ({ meta, visibility, editPost, ...props }) => {
                         </PanelRow>
                     </div>
                     <div className="pb-5">
-                        <PanelRow>
-                            <NewsSelector name='languages' title={__('Language')} value={MSN_Language} onChange={(value) => {
-                                setLanguage(value);
-                                setMarket(languageDictionary[value].markets[0].value);
-                            }}>
-                                {languages.map(language => <option value={language.value}>{__(language.name)}</option>)}
-                            </NewsSelector>
-                        </PanelRow>
-                        {__(MSN_Language) && (
-                            <PanelRow>
-                                <NewsSelector name='markets' title={__('Market')} onChange={setMarket} value={MSN_Markets}>
-                                    {(languageDictionary[MSN_Language].markets || []).map(market => <option value={market.value}>{__(market.name)}</option>)}
-                                </NewsSelector>
-                            </PanelRow>
-                        )}
                         {__(MSN_Location) && (
                         <PanelRow>
                             <div className="w-full">
                                 <label className="block mb-1">{'Location'}</label>
-                                <iframe id="locationSelector" src={`https://int.msn.com/en-us/creator/embed/locationSelector?longitude=${geo.longitude}$latitude=${geo.latitude}$locality=${address.addressLocality}$region=${address.addressRegion}$subRegion=${address.addressSubregion}&country=${address.addressCountry}`}></iframe>
+                                <iframe id="locationSelector" src={`https://int.msn.com/en-us/creator/embed/locationSelector?locality=${address.addressLocality}&region=${address.addressRegion}&subRegion=${address.addressSubregion}&country=${address.addressCountry}&latitude=${geo.latitude}&longitude=${geo.longitude}`}></iframe>
                                 <input id="locationSelectorInput" onClick={(e) => setLocation(e.target.value)} value={MSN_Location} type="hidden"/>
                             </div>
                         </PanelRow>
@@ -146,7 +124,7 @@ const NewsPanelBody = ({ meta, visibility, editPost, ...props }) => {
 
                 {msn_id && (
                     <PanelRow>
-                        <a href={`https://www.msn.com/${MSN_Markets}/creator/management/content/article`} target="_blank">{__("View Post in Microsoft")}</a>
+                        <a href={`https://www.msn.com/en-us/creator/management/content/article`} target="_blank">{__("View Post in Microsoft")}</a>
                     </PanelRow>
                 )}
             </>
