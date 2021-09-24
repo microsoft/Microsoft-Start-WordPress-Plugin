@@ -11,7 +11,6 @@ class contentApi extends ApiController
 {
     function register_routes()
     {
-        //can we auth this?
         register_rest_route('microsoft/v1', '/stats', [
             'methods' => 'GET',
             'callback' => function () {
@@ -35,7 +34,7 @@ class contentApi extends ApiController
 
                 $token = TokenService::get_token();
                 $creatorCenterUrl = MSNOptions::creatorCenterUrl();
-                wp_redirect("{$creatorCenterUrl}{$path}?third_party_token=$token");
+                wp_redirect("{$creatorCenterUrl}{$path}");
                 exit;
             }
         ]);

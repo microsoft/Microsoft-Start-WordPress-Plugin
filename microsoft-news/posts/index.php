@@ -134,10 +134,12 @@ class Posts
 
         $featureImage = get_the_post_thumbnail_url($post) ?: null;
 
-        if (substr($featureImage, 0, 4) != "http"){
-            $featureImage = site_url() . $featureImage;
+        if($featureImage) {
+            if (substr($featureImage, 0, 4) != "http"){
+                $featureImage = site_url() . $featureImage;
+            }
         }
-        
+
         $msnPost = [
             "id" => get_post_meta($post->ID, 'msn_id', true) ?: uniqid(),
             "link" => $post->guid,
@@ -150,6 +152,7 @@ class Posts
             "tags" => array_map(function ($post_tag) {
                 return $post_tag->name;
             }, wp_get_post_tags($post->ID)),
+            "locale" => "en-us",
             "location" => json_decode(get_post_meta($post->ID, 'MSN_Location', true))
         ];
 
