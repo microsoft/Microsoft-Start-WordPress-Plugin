@@ -20,8 +20,6 @@ class settingsApi extends ApiController
             'callback' => function ($data) {
                 $parameters = $data->get_json_params();
                 MSNOptions::Enabled($parameters['option']);
-                MSNOptions::Language($parameters['language']);
-                MSNOptions::Market($parameters['market']);
                 MSNOptions::Category($parameters['category']);
 
                 return new WP_REST_Response([''], 201);
@@ -37,8 +35,6 @@ class settingsApi extends ApiController
 
                 return [
                     "option" => MSNOptions::Enabled(),
-                    "language" => MSNOptions::Language(),
-                    "market" => MSNOptions::Market(),
                     "category" => MSNOptions::Category()
                 ];
             }
