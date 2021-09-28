@@ -1,4 +1,4 @@
-FROM wordpress:5.7-php7.3 as dev
+FROM wordpress:5.8-php7.3 as dev
 
 RUN ln -s /app/microsoft-news /var/www/html/wp-content/plugins/microsoft-news
 
