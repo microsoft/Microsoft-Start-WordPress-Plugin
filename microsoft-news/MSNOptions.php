@@ -58,7 +58,7 @@ class MSNOptions extends Options
 
     public static function Enabled()
     {
-        return static::Option(func_get_args(), true);
+        return static::Option(func_get_args());
     }
 
     public static function Category()

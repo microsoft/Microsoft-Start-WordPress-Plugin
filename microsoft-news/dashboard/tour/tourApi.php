@@ -15,7 +15,7 @@ class tourApi extends ApiController
                 return current_user_can('activate_plugins');
             },
             'callback' => function ($data) {
-               add_user_meta(get_current_user_id(),'wp-dismissed-pointers',$_POST['id'],false);
+               add_user_meta(get_current_user_id(),'wp-dismissed-pointers',sanitize_text_field( $_POST['id'] ),false);
             }
         ]);
 

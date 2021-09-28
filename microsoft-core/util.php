@@ -9,10 +9,10 @@ function console_log($output, $with_script_tags = true)
     if ($with_script_tags) {
         $js_code = '<script>' . $js_code . '</script>';
     }
-    echo $js_code;
+    esc_html_e( $js_code );
 }
 
 function alert($message)
 {
-    echo "<script>alert('$message');</script>";
+    esc_html_e( "<script>alert('$message');</script>" );
 }
