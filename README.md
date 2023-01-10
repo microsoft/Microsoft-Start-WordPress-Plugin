@@ -9,7 +9,11 @@ Resources:
 - Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns
 
 # Introduction
-WordPress Plugin for MSN.  
+WordPress Plugin for MSN.
+
+It is based on WordPress latest version which is v5.8.*.
+
+Tested up to WordPress 5.8.1.
 
 This allows posts from WP to be pushed to MSN for ingestion and has a dashboard to show users their publishing statistics.
 
